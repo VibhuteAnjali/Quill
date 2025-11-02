@@ -51,7 +51,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+1-(402)-786-8780</span>
               </li>
               <li>
                 <Mail size={16} />
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li>
                 <MapPin size={16} />
-                <span>123 Design Street, NY 10001</span>
+                <span>2456 North Avenue,Waverly,NE 68462</span>
               </li>
             </ul>
           </div>
