@@ -1,0 +1,120 @@
+.collections {
+  background-color: var(--color-white);
+}
+
+.collections-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: var(--color-medium-gray);
+  margin-top: 12px;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.collection-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.collection-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.collection-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.collection-card:hover .collection-image {
+  transform: scale(1.05);
+}
+
+.collection-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.collection-card:hover .collection-overlay {
+  opacity: 1;
+}
+
+.collection-btn {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.collection-btn:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.collection-info {
+  padding: 24px;
+}
+
+.collection-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--color-black);
+}
+
+.collection-description {
+  font-size: 15px;
+  color: var(--color-medium-gray);
+  line-height: 1.6;
+}
+
+.collections-footer {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .collections-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .collections-header {
+    margin-bottom: 40px;
+  }
+}
