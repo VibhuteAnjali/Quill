@@ -38,7 +38,6 @@ const BlogPage = () => {
               <img 
                 src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200&q=80" 
                 alt="Modern kitchen with natural elements"
-                style={{ filter: 'grayscale(100%)' }}
               />
             </div>
 

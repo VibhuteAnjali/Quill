@@ -29,7 +29,6 @@ const Gallery = () => {
               <img 
                 src={image} 
                 alt={`Gallery ${index + 1}`}
-                style={{ filter: 'grayscale(100%)' }}
               />
               <div className="gallery-overlay">
                 <Instagram size={32} />

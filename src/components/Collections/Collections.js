@@ -42,7 +42,6 @@ const Collections = () => {
                   src={collection.image} 
                   alt={collection.title}
                   className="collection-image"
-                  style={{ filter: 'grayscale(100%)' }}
                 />
                 <div className="collection-overlay">
                   <button className="collection-btn">
