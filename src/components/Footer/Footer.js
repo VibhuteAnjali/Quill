@@ -21,13 +21,13 @@ const Footer = () => {
               Transform your house into a home you love with our curated home décor collections.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Instagram">
+              <a href="https://instagram.com" className="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Facebook">
+              <a href="https://facebook.com" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Twitter">
+              <a href="https://twitter.com" className="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
                 <Twitter size={20} />
               </a>
             </div>
@@ -46,8 +46,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-heading">Customer Care</h4>
             <ul className="footer-links">
-              <li><a href="#">Shipping & Returns</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="#/">Shipping & Returns</a></li>
+              <li><a href="#/">FAQ</a></li>
               <li><Link to="/privacy" onClick={scrollToTop}>Privacy Policy</Link></li>
               <li><Link to="/terms" onClick={scrollToTop}>Terms & Services</Link></li>
             </ul>
