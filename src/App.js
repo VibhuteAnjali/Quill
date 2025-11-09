@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import HomePage from './components/HomePage/HomePage';
 import BlogPage from './components/BlogPage/BlogPage';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService/TermsOfService';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
         </Routes>
         <Footer />
       </div>

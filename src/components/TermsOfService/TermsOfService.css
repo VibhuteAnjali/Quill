@@ -1,0 +1,141 @@
+.terms-page {
+  padding-top: 70px;
+}
+
+.terms-hero {
+  background-color: var(--color-dark-gray);
+  padding: 60px 0;
+  color: var(--color-white);
+}
+
+.terms-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terms-icon {
+  margin: 0 auto 20px;
+  color: var(--color-light-gray);
+}
+
+.terms-hero-title {
+  font-size: 48px;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.terms-hero-subtitle {
+  font-size: 18px;
+  color: var(--color-light-gray);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.terms-date {
+  font-size: 14px;
+  color: var(--color-light-gray);
+  font-style: italic;
+}
+
+.terms-content {
+  background-color: var(--color-white);
+}
+
+.terms-sections {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terms-section {
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+}
+
+.terms-section-title {
+  font-size: 26px;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.terms-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.terms-list-item {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-dark-gray);
+  margin-bottom: 16px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.terms-list-item::before {
+  content: '•';
+  position: absolute;
+  left: 10px;
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.terms-footer-note {
+  max-width: 800px;
+  margin: 60px auto 0;
+  padding: 40px;
+  background-color: var(--color-off-white);
+  border: 1px solid var(--color-light-gray);
+}
+
+.terms-footer-note h3 {
+  font-size: 24px;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.terms-footer-note p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-dark-gray);
+}
+
+@media (max-width: 768px) {
+  .terms-hero {
+    padding: 40px 0;
+  }
+
+  .terms-hero-title {
+    font-size: 36px;
+  }
+
+  .terms-hero-subtitle {
+    font-size: 16px;
+  }
+
+  .terms-section-title {
+    font-size: 22px;
+  }
+
+  .terms-list-item {
+    font-size: 15px;
+  }
+
+  .terms-footer-note {
+    padding: 30px 20px;
+  }
+
+  .terms-footer-note h3 {
+    font-size: 20px;
+  }
+
+  .terms-footer-note p {
+    font-size: 15px;
+  }
+}

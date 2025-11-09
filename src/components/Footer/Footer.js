@@ -4,6 +4,13 @@ import { Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
 import './Footer.css';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <footer id="contact" className="footer">
       <div className="container">
@@ -29,9 +36,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="footer-links">
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
               <li><a href="#collections">Collections</a></li>
-              <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/blog" onClick={scrollToTop}>Blog</Link></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -41,8 +48,8 @@ const Footer = () => {
             <ul className="footer-links">
               <li><a href="#">Shipping & Returns</a></li>
               <li><a href="#">FAQ</a></li>
-              <li><Link to="/privacy">Privacy Policy</Link></li>
-              <li><a href="#">Terms & Conditions</a></li>
+              <li><Link to="/privacy" onClick={scrollToTop}>Privacy Policy</Link></li>
+              <li><Link to="/terms" onClick={scrollToTop}>Terms & Services</Link></li>
             </ul>
           </div>
 
